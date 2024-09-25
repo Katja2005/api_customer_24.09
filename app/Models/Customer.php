@@ -13,8 +13,8 @@ class Customer extends Model
     protected $primaryKey = 'customer_id';
     public $timestamps = false;
   
-    public function isGoldMember(){
-        $this->points>2000;
+    public function isGoldMember() {
+        return $this->points > 2000;
     }
 
 }
