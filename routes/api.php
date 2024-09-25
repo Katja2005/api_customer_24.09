@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\OrderController;
 use Illuminate\Http\Request;
 use App\Http\Controllers\CustomerController;
 use Illuminate\Support\Facades\Route;
@@ -9,4 +10,5 @@ use Illuminate\Support\Facades\Route;
 // })->middleware('auth:sanctum');
 
 
-Route::apiResource('/customer', CustomerController::class);
+Route::apiResource('customer', CustomerController::class);
+Route::apiResource('customer.order', OrderController::class );
