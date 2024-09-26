@@ -100,10 +100,7 @@ class CustomerController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Customer $customer)
-    {
-        //
-    }
+ 
 
     /**
      * Update the specified resource in storage.

@@ -17,9 +17,12 @@ class Customer extends Model
         return $this->points > 2000;
     }
 
-    public function order()
+    public function orders()
     {
         return $this->hasMany(Order::class, 'customer_id', 'customer_id');
     }
 
+
+
+    
 }
